@@ -1,0 +1,26 @@
+{
+	"name": "tribute-page-FCC",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch": "node-sass -w ./src/sass/style.scss ./dist/css/style.css",
+		"devserver": "live-server",
+		"start": "npm-run-all --parallel devserver watch",
+		"compile": "node-sass src/sass/style.scss dist/css/styles.comp.css",
+		"prefix": "postcss --use autoprefixer -b 'last 10 versions' dist/css/styles.comp.css -o dist/css/styles.prefix.css",
+		"compress": "node-sass dist/css/styles.prefix.css dist/css/style.css --output-style compressed",
+		"build": "npm-run-all compile prefix compress"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"autoprefixer": "^9.8.4",
+		"concat": "^1.0.3",
+		"live-server": "^1.2.1",
+		"node-sass": "^4.5.3",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^7.1.1"
+	}
+}
