@@ -220,9 +220,9 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   body {
-    margin: 1rem auto;
+    margin: auto;
     width: 100%;
-    padding: 1rem; }
+    padding: .5rem; }
   .footer-content {
     max-width: 100%;
     width: 100%; }
@@ -236,3 +236,7 @@ h3 {
     padding: 0.3rem; }
   .footer-content {
     padding: 1rem; } }
+
+@media only screen and (max-width: 330px) {
+  .footer__link {
+    display: block; } }
